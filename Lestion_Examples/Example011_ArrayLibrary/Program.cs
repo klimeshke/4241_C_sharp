@@ -21,7 +21,7 @@ void PrintArray(int[] col)
         position++;
     }
 }
-
+//Персчет индексов, основное решение(МЕТОД)
 int IndexOf(int[] collection, int find)
 {
     int count = collection.Length;
