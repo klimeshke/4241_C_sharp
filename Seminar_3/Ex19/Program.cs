@@ -12,9 +12,9 @@ int digitTwo = numberFiveDigits / 1000 % 10;
 int digitFour = numberFiveDigits / 10 % 10;
 int digitFive = numberFiveDigits % 10;
 
-if (digitOne == digitFive && digitTwo==digitFour)
+if (digitOne == digitFive && digitTwo == digitFour)
 {
     Console.WriteLine("Ура палиндром! ");
 }
 else
-Console.WriteLine("Нет, не палиндром :( ");
+    Console.WriteLine("Нет, не палиндром :( ");
