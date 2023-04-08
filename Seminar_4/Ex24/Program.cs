@@ -17,7 +17,7 @@ Console.WriteLine(sum);
  
 int GetIntInput()
 {
-    string input = Console.ReadLine();
+    string input = Console.ReadLine()!;
     int result = int.Parse(input);
     return result;
 }

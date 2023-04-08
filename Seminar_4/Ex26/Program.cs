@@ -6,23 +6,24 @@ Console.Clear();
 
 Console.WriteLine("Введите число: ");
 int inputInt = GetIntInput();
-int count = HowMuchNum();
+int count = HowMuchNum(inputInt);
 Console.WriteLine($"В числе {inputInt} количество цифр {count}");
 
 int GetIntInput()
 {
-    string input = Console.ReadLine();
+    string input = Console.ReadLine()!;
     int result = int.Parse(input);
     return result;
 }
-int HowMuchNum()
+
+int HowMuchNum(int a)
 {
-    int countFromMetod = 0;
-    int cnt = inputInt;
-    while (cnt / 10 != 0)
+    int countReturn = 0;
+    while (a > 0)
     {
-        cnt = cnt / 10;
-        countFromMetod++;
+        a /= 10;
+        countReturn++;
     }
-    return countFromMetod;
+    return countReturn;
+
 }
