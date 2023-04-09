@@ -4,12 +4,11 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 Console.Clear();
-
+// Основной код
 int[] array = new int[4];
 ArrayFillPrint(array);
-Console.Write(ArraySumOdd(array));
-
-
+Console.Write(ArraySumOddPosition(array));
+// Функция заполнения и вывода в консоль массива V
 void ArrayFillPrint(int[] array)
 {
     Console.Write("[");
@@ -22,12 +21,12 @@ void ArrayFillPrint(int[] array)
             Console.Write(array[i] + "] -> ");
     }
 }
-
-int ArraySumOdd(int[] array)
+// Функция суммы значений элементов на нечётных позициях V
+int ArraySumOddPosition(int[] array)
 {
     int sum = 0;
     for (int i = 0; i < array.Length; i++)
-        if (array[i] % 2 != 0)
+        if (i % 2 != 0)
             sum += array[i];
     return sum;
 }

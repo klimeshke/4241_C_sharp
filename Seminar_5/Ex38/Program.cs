@@ -3,11 +3,11 @@
 
 // [3 7 22 2 78] -> 76
 Console.Clear();
-
+// Основной код
 double[] array = { 3, 7, 22, 2, 78 };
 ArrayPrint(array);
 Console.Write($"{ArrayMax(array) - ArrayMin(array)}");
-
+// Функция поиска максимального значения в массиве V
 double ArrayMax(double[] array)
 {
     double maxArray = array[0];
@@ -18,7 +18,7 @@ double ArrayMax(double[] array)
     }
     return maxArray;
 }
-
+// Функция поиска минимального значения в массиве V
 double ArrayMin(double[] array)
 {
     double minArray = array[0];
@@ -29,7 +29,7 @@ double ArrayMin(double[] array)
     }
     return minArray;
 }
-
+// Функция вывода в консоль массива V
 void ArrayPrint(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
