@@ -21,7 +21,7 @@ void ArrayFillPrint(int[] array)
             Console.Write(array[i] + "] -> ");
     }
 }
-// Функция суммы значений элементов на нечётных позициях V
+// Функция суммы значений элементов на нечётных позициях массива V
 int ArraySumOddPosition(int[] array)
 {
     int sum = 0;
