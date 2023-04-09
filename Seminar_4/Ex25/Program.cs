@@ -8,6 +8,7 @@ int numA = GetIntInput();
 Console.WriteLine("Введите число B: ");
 int numB = GetIntInput();
 int result = naturalDegree(numA, numB);
+Console.WriteLine($"{numA} в сепени {numB} = {result}");
 
 int GetIntInput()
 {
@@ -25,5 +26,3 @@ int naturalDegree(int firstNum, int secondNum)  // понимаю что фун�
     }
     return degree;
 }
-
-Console.WriteLine($"{numA} в сепени {numB} = {result}");

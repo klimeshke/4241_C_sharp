@@ -8,8 +8,7 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int num = GetIntInput();
 int sum = GetSumNum(num);
-
-
+Console.WriteLine($"Сумма цифр числа {num} = {sum}");
 
 int GetIntInput()
 {
@@ -28,5 +27,3 @@ int GetSumNum(int value)
     }
     return result;
 }
-
-Console.WriteLine($"Сумма цифр числа {num} = {sum}");

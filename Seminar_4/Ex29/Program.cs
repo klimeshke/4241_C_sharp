@@ -7,19 +7,18 @@
 Console.Clear();
 
 Console.WriteLine("Длину массива: ");
-int arrayLength = GetIntInput();
+int arrayLength = ReadNumberFromConsole();
 Console.WriteLine("Введите минимальное значение массива: ");
-int arrayMin = GetIntInput();
+int arrayMin = ReadNumberFromConsole();
 Console.WriteLine("Введите максимальное значение массива: ");
-int arrayMax = GetIntInput();
+int arrayMax = ReadNumberFromConsole();
 int[] array = new int[arrayLength];
 ArrayFillPrint(array);
 
-int GetIntInput()
+int ReadNumberFromConsole()
 {
     string input = Console.ReadLine()!;
-    int result = int.Parse(input);
-    return result;
+    return int.Parse(input);
 }
 
 void ArrayFillPrint(int[] collect)

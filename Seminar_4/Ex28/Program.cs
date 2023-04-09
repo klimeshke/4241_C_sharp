@@ -6,7 +6,7 @@ Console.Clear();
 Console.WriteLine("Введите число N: ");
 int numN = GetIntInput();
 int product = GetProdNum(numN);
-
+Console.WriteLine($"Произведение чисел от 1 до N = {product}");
 
 
 int GetIntInput()
@@ -26,4 +26,4 @@ int GetProdNum(int n)
     return amountN;
 }
 
-Console.WriteLine($"Произведение чисел от 1 до N = {product}");
+
