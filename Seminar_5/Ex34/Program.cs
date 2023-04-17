@@ -8,7 +8,7 @@ Console.WriteLine("Введите длину массива: ");
 int arrayLength = ReadNumberFromConsole();
 int[] array = new int[arrayLength];
 ArrayFillPrint(array);
-Console.WriteLine($"Количество четных чисел в массиве: {ArrayPositiveCount(array)}");
+Console.WriteLine($"Количество четных чисел в массиве: {CountEvenNembersArray(array)}");
 // Функция считывания с консоли V
 int ReadNumberFromConsole()
 {
@@ -30,8 +30,8 @@ void ArrayFillPrint(int[] array)
         }
     }
 }
-// Фунция подсчёта количества положительных чисел в массиве V
-int ArrayPositiveCount(int[] array)
+// Фунция подсчёта количества чётных чисел в массиве V
+int CountEvenNembersArray(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
