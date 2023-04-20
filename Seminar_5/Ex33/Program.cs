@@ -27,6 +27,7 @@ bool FindNumberInArray(int[] array, int num)
     }
     return false;
 }
+
 int ReadNumberFromConsole()
 {
     string input = Console.ReadLine()!;
